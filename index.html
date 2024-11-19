@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <section class="section0">
+    <div class="headeratas">
+      <nav>
+        <ol class="olli">
+          <li> <a href="index.html"><img src="JA.png"class="logoatas"></a> </li>
+          <li>Home</li>
+          <li> Artikel </li>
+          <li> <a href="account.html" style=color:black;> Account </a> </li>
+          <li> <a href="checkout.html"><img src="keranjang.png"class="keranjang" id="gbrkeranjang"></a> </li>
+        </ol>
+        <p id="numberChart">1</p>
+      </nav>
+    </div>
+  </section>
+  <section>
+    <div class="judul">
+      <h1>Website Herbal dan Akupunktur</h1>
+    </div>
+    <div class="button">
+      <button type="button" class="filter-btn" data-id="All">All</button>
+      <button type="button" class="filter-btn" data-id="Akupunktur">Akupunktur</button>
+      <button type="button" class="filter-btn" data-id="Herbal">Herbal</button>
+      <button type="button" class="filter-btn" data-id="Massage">Massage</button>
+      <button type="button" class="filter-btn" data-id="Makanan Sehat">Makanan Sehat</button>
+    </div>
+  </section>
+  <section class="section2">
+    <div class="menu1">
+      <img src="akupunktur.jpg" class="gambarmenu1"> 
+      <div class="menuinfo1">
+        <header>
+          <h2 class="namaproduk1"> Akupunktur</h2>
+          <h2 class="hargaproduk1"> Rp.100.000 </h2>
+        </header>
+        <p class="p1">Akupunktur merupakan praktik pengobatan tradisional dari Tiongkok yang menggunakan jarum tipis untuk
+          dimasukkan pada titik-titik tertentu di tubuh. </p>
+        <button class="btnproduk" id="chartbutton" onclick="addToCart('Akupunktur', 100000, 'akupunktur.jpg')"> Masukkan Keranjang </button>
+      </div>
+    </div>
+    <div class="menu1">
+      <img src="pijat.jpg" class="gambarmenu1">
+      <div class="menuinfo1">
+        <header>
+          <h2 class="namaproduk1"> Pijat</h2>
+          <h2 class="hargaproduk1"> Rp.25.000-300.000</h2>
+        </header>
+        <p class="p1"> Pijat untuk memperlancar sirkulasi dara dan cairan, mulai dari totok wajah hingga, pijat jawa pijat
+          bali, pijat bayi, pijat ibu hamil dan lain-lain</p> 
+        <button class="btnproduk" id="chartbutton1" onclick="addToCart('Pijat',300000, 'pijat.jpg')"> Masukkan Keranjang </button>
+      </div>
+    </div>
+    <div class="menu1">
+      <img src="herbal.jpg" class="gambarmenu1">
+      <div class="menuinfo1">
+        <header>
+          <h2 class="namaproduk1"> Herbal</h2>
+          <h2 class="hargaproduk1"> -Lihat daftar harga per produk</h2>
+        </header>
+        <p class="p1"> Herbal produk Indonesia dan Tiongkok, mulai dari simplisa dan lain-lain</p>
+        <button class="btnproduk" id="chartbutton2" onclick="addToCart('Herbal',100000, 'herbal.jpg')"> Masukkan Keranjang </button>
+      </div>
+    </div>
+    <div class="menu1">
+      <img src="nutrisi.jpg" class="gambarmenu1">
+      <div class="menuinfo1">
+        <header>
+          <h2 class="namaproduk1"> Makanan Sehat</h2>
+          <h2 class="hargaproduk1"> -Lihat daftar harga per produk</h2>
+        </header>
+        <p class="p1"> Berbagai macam makanan sehat yang organik dan bernutrisi</p>
+        <button class="btnproduk" id="chartbutton3" onclick="addToCart('Makanan Sehat',200000, 'nutrisi.jpg')"> Masukkan Keranjang </button>
+      </div>
+    </div>
+  </section>
+  <section class="section4"> 
+    <div class="testimonial">
+      <div class="testi1">
+        <p> Di sini tak hanya menyediakan satu perawatan, saya suka caranya karena dikombinasikan secara holistik </p>
+        <div class="star"> 
+          <i class="fa fa-star"></i>
+           <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <img class="gbrtestimoni" src="orang1.jpg">
+        <p> Miss Jenny </p>
+      </div>
+      <div class="testi1">
+        <p> Terapi akupuntur sangat membantu kesehatan saya dan nyeri yang biasanya sering kambuh di pinggang saya sudah hilang </p>
+        <div class="star">
+          <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <img class="gbrtestimoni" src="orang2.jpg">
+        <p> Miss Stevy </p>
+      </div>
+      <div class="testi1">
+        <p> Saya suka sekali makanan dan minumannya juga segar serta perawatan yang nyaman untuk kebugaran </p>
+        <div class="star">
+          <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <img class="gbrtestimoni" src="orang3.jpg">
+        <p> Mr. Stevano </p>
+      </div>
+    </div>
+    <div>
+  
+    </div>
+  </section>
+ 
+<section class="section3">
+  <div class="footer">
+    <div> 
+      <h1> Download our App in </h1>
+      <p> Download App for mobile and ios </p>
+      <img src="dwn app.png" class="gambarmenu2">
+    </div>
+    <div> 
+    <img src="JA.png" class="gambarlogo">
+    <h3 class="jargon-white bg-green"> Perawatan Holistik serta Herbal Alami</h3>
+      </div>
+    <div> 
+      <h1> Follow Us</h1>
+      <ul class="footerkontak">
+        <li><a href="index.html">Instagram</a></li>
+        <li><a href="index.html">Youtube</a></li>
+        <li><a href="index.html">Twitter</a></li>
+        <li><a href="index.html">Shopee</a></li>
+      </ul>
+    </div>
+    <div> 
+      <h1> Contact Us</h1>
+      <ul class="footerkontak">
+        <li><a href="https://api.whatsapp.com/send/?phone=6288226285295&text&type=phone_number&app_absent=0"> <img src="WhatsApp_icon.png" class="wapict">Whatsapp</a></li>
+        <li><a href="index.html">Telegram</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+<div id="divbesar">
+  <img id="bubble"src="images/Union.png" alt="gambar error" onclick="closeForm()"/>
+  <div id="kartu" class="card">
+     <span id="close-button" onclick="closeForm()">&#10006;</span>
+    <img src="images/avatar.png"id="avatarpict"/>
+    <h1>Hi here!</h1>
+    <div class="mechatbesar" id="divmechat">
+      <p id="mechat"> Can I help you? </p>
+    </div>
+    <div style="width: 100%">
+      <div class="description">
+         <p><input id="idteks"type="text" placeholder="ketik di sini..."></p>
+      </div>
+      <button id="idbutton" onclick="inputpesan()">send</button>
+    </div>
+  </div>
+</div>
+</section>
+<script src ="script.js"></script>
+</body>
+
+</html>
